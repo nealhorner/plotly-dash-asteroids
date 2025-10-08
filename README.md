@@ -27,6 +27,10 @@ uv run python run.py
 
 ## Development
 
+### Generate Requirements.txt
+
+The requirements.txt file is generated automatically by the `generate-requirements.yml` workflow.
+
 ### Code Quality
 
 This project uses Ruff for linting and formatting:
@@ -50,23 +54,3 @@ uv run ruff check . --fix && uv run ruff format .
 ```bash
 uv run python src/app.py
 ```
-
-## Game Controls
-
-- **Arrow Keys**: Move the spaceship
-- **Spacebar**: Fire bullets
-- **R**: Reset the game
-
-## Game Settings
-
-- **Game Speed**: Adjust the overall game speed
-- **Asteroid Count**: Set the number of asteroids
-- **Difficulty**: Choose between Easy, Medium, and Hard
-
-## Development
-
-The application is built with:
-- **Dash**: Web application framework
-- **Plotly**: Interactive charts and visualizations
-- **Bootstrap**: UI components and styling
-- **NumPy**: Mathematical operations for game physics
