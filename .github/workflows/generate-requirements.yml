@@ -7,6 +7,12 @@ on:
     paths:
       - 'pyproject.toml'
       - 'uv.lock'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'pyproject.toml'
+      - 'uv.lock'
 
 jobs:
   generate-requirements:
