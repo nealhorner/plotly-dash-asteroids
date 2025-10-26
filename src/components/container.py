@@ -11,6 +11,6 @@ def container(children: list, style: dict = None):
             "border": f"2px solid {theme['color']}",
             "borderRadius": "10px",
             "boxShadow": f"0 0 10px {theme['color']}",
-            **style,
+            **(style or {}),
         },
     )
